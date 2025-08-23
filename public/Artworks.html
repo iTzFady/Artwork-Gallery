@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artwork Gallery - Showcase Room</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/0b88e23e1b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="artworks-nav" id="codeBar">
+      <div class="user-section">
+        <img id="profilePic" alt="Profile" />
+        <h2 id="username"></h2>
+        <button class="logout-btn" id="logout">
+          <i class="fa-solid fa-right-from-bracket"></i>
+        </button>
+      </div>
+
+      <div class="room-code-section">
+        <h1>Room Code:</h1>
+        <input type="text" id="code" class="code-input" readonly />
+        <button class="copy-btn" type="button">
+          <i class="fa-solid fa-copy"></i> Copy
+        </button>
+      </div>
+
+      <button class="end-competition-btn" type="button">End Competition</button>
+    </nav>
+    <div class="artwork-body">
+      <div class="gallery-container">
+        <div class="gallery-header">
+          <h2 class="gallery-title">Artwork Gallery</h2>
+          <p class="gallery-subtitle">View and vote on submissions</p>
+        </div>
+
+        <div id="artworksContainer" class="artworks-grid">
+          <div class="upload-card" id="uploadCard">
+            <div class="upload-content">
+              <div class="upload-icon">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+              </div>
+              <p class="upload-text">Upload Photo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/artworks.js"></script>
+  </body>
+</html>

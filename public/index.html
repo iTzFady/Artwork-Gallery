@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Artwork Gallery - Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/0b88e23e1b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="profile-section">
+        <img id="profilePic" class="profile-pic" alt="Profile" />
+        <h1 id="username" class="username">Username</h1>
+        <p class="welcome-text">Welcome to your creative space</p>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <h2 class="container-title">Join or Create a Room</h2>
+
+      <form id="roomForm">
+        <div class="form-group">
+          <label for="codeInput">Enter Room Code</label>
+          <div class="input-with-icon">
+            <i class="fa-solid fa-key"></i>
+            <input
+              type="text"
+              id="codeInput"
+              name="code"
+              placeholder="Enter room code"
+              required
+            />
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          <i class="fa-solid fa-arrow-right"></i> Join Room
+        </button>
+      </form>
+
+      <div class="divider">OR</div>
+
+      <button id="createRoomBtn" class="btn btn-secondary">
+        <i class="fa-solid fa-plus"></i> Create New Room
+      </button>
+
+      <div class="logout-link">
+        <a id="logout">Log out</a>
+      </div>
+    </div>
+    <script src="js/createARoom.js" defer></script>
+  </body>
+</html>

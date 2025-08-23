@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A7la sho8l</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/0b88e23e1b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <div id="profile" class="Personification">
+      <img id="profilePic" />
+      <h2 id="username"></h2>
+    </div> -->
+    <div class="Upload" id="upload-container">
+      <h1>Upload a photo <span id="roomCodeDisplay"></span></h1>
+      <form id="uploadform">
+        <label for="fileInput" class="upload-btn-container">
+          <button id="uploadPhotoBtn" type="button">
+            <i class="fas fa-camera"></i>
+            <span class="btn-text">Upload a Photo</span>
+            <img id="preview" alt="Image preview" class="btn-preview" />
+          </button>
+        </label>
+        <input
+          type="file"
+          id="fileInput"
+          accept="image/*"
+          style="display: none"
+        />
+        <input
+          type="text"
+          id="description"
+          name="description"
+          placeholder="Write your description"
+          required
+        />
+        <button id="submitBtn" type="button">Upload Photo</button>
+      </form>
+    </div>
+
+    <script src="js/uploadPhoto.js"></script>
+  </body>
+</html>
