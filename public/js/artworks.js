@@ -179,7 +179,7 @@ function displayArtworks(artworks) {
         <div class="artwork-author">
           <img src="${
             artwork.createdBy.profilePicture ||
-            "/uploads/profile-pics/default-profile.png"
+            "/assets/imgs/default-profile.png"
           }" 
                alt="${artwork.createdBy.name}" class="author-avatar" />
           <span class="author-name">${artwork.createdBy.name}</span>
@@ -278,7 +278,7 @@ async function updateProfile() {
     const username = document.getElementById("username");
 
     profilePic.src =
-      profile.profilePicture || "/uploads/profile-pics/default-profile.png";
+      profile.profilePicture || "/assets/imgs/default-profile.png";
     profilePic.alt = `${profile.name || "User"}`;
     username.textContent = `${profile.name || "User"}`;
   }

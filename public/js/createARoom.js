@@ -89,7 +89,7 @@ async function updateProfile() {
     const username = document.getElementById("username");
 
     profilePic.src =
-      profile.profilePicture || "/uploads/profile-pics/default-profile.png";
+      profile.profilePicture || "/assets/imgs/default-profile.png";
     profilePic.alt = `${profile.name || "User"}`;
     username.textContent = `Hello, ${profile.name || "User"}`;
   }

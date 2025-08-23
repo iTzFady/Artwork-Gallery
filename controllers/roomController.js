@@ -1,4 +1,3 @@
-const express = require("express");
 const Room = require("../models/Room");
 const { v4: uuidv4 } = require("uuid");
 const mongoose = require("mongoose");

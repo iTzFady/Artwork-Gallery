@@ -1,6 +1,7 @@
 const express = require("express");
 const multer = require("multer");
 const path = require("path");
+const fs = require("fs");
 const {
   register,
   login,
@@ -8,11 +9,18 @@ const {
   verifyToken,
 } = require("../controllers/userController");
 const auth = require("../middleware/auth");
+const { error } = require("console");
 const router = express.Router();
 
 const profilePicStorage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "uploads/profile-pics/");
+    const profilePicDir = "uploads/profile-pics/";
+    fs.mkdir(profilePicDir, { recursive: true }, (err) => {
+      if (err) {
+        return cb(err);
+      }
+      cb(null, profilePicDir);
+    });
   },
   filename: (req, file, cb) => {
     const ext = path.extname(file.originalname);

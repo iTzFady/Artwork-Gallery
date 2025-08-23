@@ -1,6 +1,6 @@
 const express = require("express");
 const multer = require("multer");
-
+const fs = require("fs");
 const {
   uploadArtwork,
   getAllArtwork,
@@ -12,7 +12,15 @@ const {
 const auth = require("../middleware/auth");
 
 const storage = multer.diskStorage({
-  destination: (req, file, cb) => cb(null, "uploads/"),
+  destination: (req, file, cb) => {
+    const uploadDir = "uploads/";
+    fs.mkdir(uploadDir, { recursive: true }, (err) => {
+      if (err) {
+        return cb(err);
+      }
+      cb(null, uploadDir);
+    });
+  },
   filename: (req, file, cb) => cb(null, Date.now() + "-" + file.originalname),
 });
 
