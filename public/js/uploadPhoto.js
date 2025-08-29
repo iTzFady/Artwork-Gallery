@@ -1,9 +1,15 @@
 document.addEventListener("DOMContentLoaded", async function () {
-  updateProfile();
-  const isAuthenticated = await checkAuth();
-  if (!isAuthenticated) return;
   const urlParams = new URLSearchParams(window.location.search);
   const roomCode = urlParams.get("roomCode");
+  if (roomCode) {
+    document.getElementById(
+      "roomCodeDisplay"
+    ).textContent = `Room: ${roomCode}`;
+  }
+  const isAuthenticated = await checkAuth();
+  if (!isAuthenticated) return;
+
+  await updateProfile();
 
   const fileInput = document.getElementById("fileInput");
   const uploadBtn = document.getElementById("uploadPhotoBtn");
@@ -110,7 +116,6 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         if (response.ok) {
           const result = await response.json();
-          // alert("Photo uploaded successfully!");
           window.location.href = `/Artworks.html?code=${roomCode}`;
           return;
         } else {

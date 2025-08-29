@@ -72,6 +72,17 @@ document.addEventListener("DOMContentLoaded", async function () {
       },
     });
     const room = await roomResponse.json();
+    const currentUser = JSON.parse(localStorage.getItem("user"));
+    document.title = `Artwork Gallery - ${room.owner.name}'s Room`;
+    const isRoomOwner = room.owner._id === currentUser.id;
+
+    // Show end competition button if user is not the owner
+    if (isRoomOwner) {
+      const endCompetitionBtn = document.querySelector(".end-competition-btn");
+      if (endCompetitionBtn) {
+        endCompetitionBtn.style.display = "block";
+      }
+    }
 
     // Update UI based on room status
     if (room.status === "ended") {

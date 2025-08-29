@@ -9,7 +9,7 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A7la sho8l</title>
+    <title>Artwork Gallery - Rate Artwork</title>
     <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://kit.fontawesome.com/0b88e23e1b.js"
@@ -17,49 +17,47 @@
     ></script>
   </head>
   <body>
-    <div class="navbar">
+    <nav class="navbar">
       <div class="Personification">
-        <img id="profilePic" />
+        <img id="profilePic" alt="Profile" />
         <h2 id="username"></h2>
       </div>
-
-      <h1>Give this a rating score!</h1>
+      <h1>Rate this Artwork</h1>
       <div></div>
-    </div>
+    </nav>
+
     <div class="container">
       <div class="photos">
-        <img id="votedImage" src="" alt="photo" />
+        <img id="votedImage" src="" alt="Artwork" />
         <p id="photoDescription"></p>
       </div>
-      <form id="ratingForm">
-        <div class="Rating">
-          <div class="ratingBox">
-            <div class="ratingstars">
-              <i class="fa-solid fa-star" data-rating="1"></i>
-              <i class="fa-solid fa-star" data-rating="2"></i>
-              <i class="fa-solid fa-star" data-rating="3"></i>
-              <i class="fa-solid fa-star" data-rating="4"></i>
-              <i class="fa-solid fa-star" data-rating="5"></i>
-            </div>
-            <div class="rating-value">
-              Your rating: <span id="selected-rating">0</span>/5
-            </div>
-            <div class="opinions">
-              <form id="ratingForm">
-                <input
-                  required
-                  type="text"
-                  id="opinion"
-                  name="opinion"
-                  placeholder="write your opinion"
-                />
-                <button type="submit" class="submit-btn">Submit Rating</button>
-              </form>
-            </div>
+
+      <div class="Rating" id="ratingForm">
+        <div class="ratingBox">
+          <div class="ratingstars">
+            <i class="fa-solid fa-star" data-rating="1"></i>
+            <i class="fa-solid fa-star" data-rating="2"></i>
+            <i class="fa-solid fa-star" data-rating="3"></i>
+            <i class="fa-solid fa-star" data-rating="4"></i>
+            <i class="fa-solid fa-star" data-rating="5"></i>
+          </div>
+          <div class="rating-value">
+            Your rating: <span id="selected-rating">0</span>/5
+          </div>
+          <div class="opinions">
+            <form id="ratingForm">
+              <textarea
+                id="opinion"
+                name="opinion"
+                placeholder="Share your thoughts on this artwork... (optional)"
+              ></textarea>
+              <button type="submit" class="submit-btn">Submit Rating</button>
+            </form>
           </div>
         </div>
-      </form>
+      </div>
     </div>
+
     <div class="reviews-container">
       <h2>User Reviews</h2>
       <div id="reviewsList" class="reviews-list">

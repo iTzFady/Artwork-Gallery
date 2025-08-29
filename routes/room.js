@@ -6,7 +6,7 @@ const {
   createRoom,
   joinRoom,
   endRoom,
-  getWinners,
+  getRoomStatus,
 } = require("../controllers/roomController");
 
 router.post("/create", auth, createRoom);
@@ -15,6 +15,6 @@ router.post("/join/:identifier", auth, joinRoom);
 
 router.post("/end/:roomId", auth, endRoom);
 
-router.get("/:identifier", auth, getWinners);
+router.get("/:identifier", auth, getRoomStatus);
 
 module.exports = router;

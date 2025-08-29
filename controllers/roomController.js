@@ -78,26 +78,36 @@ exports.endRoom = async (req, res) => {
   }
 };
 
-exports.getWinners = async (req, res) => {
+exports.getRoomStatus = async (req, res) => {
   try {
     const { identifier } = req.params;
 
-    let room = await Room.findOne({ inviteCode: identifier }).populate({
-      path: "winners",
-      populate: {
-        path: "createdBy",
-        select: "name profilePicture",
-      },
-    });
-
-    if (!room && mongoose.Types.ObjectId.isValid(identifier)) {
-      room = await Room.findById(identifier).populate({
+    let room = await Room.findOne({ inviteCode: identifier })
+      .populate({
         path: "winners",
         populate: {
           path: "createdBy",
           select: "name profilePicture",
         },
+      })
+      .populate({
+        path: "owner",
+        select: "_id name profilePicture",
       });
+
+    if (!room && mongoose.Types.ObjectId.isValid(identifier)) {
+      room = await Room.findById(identifier)
+        .populate({
+          path: "winners",
+          populate: {
+            path: "createdBy",
+            select: "name profilePicture",
+          },
+        })
+        .populate({
+          path: "owner",
+          select: "_id name profilePicture",
+        });
     }
     if (!room) {
       return res.status(404).json({ error: "Room not found" });
@@ -120,6 +130,7 @@ exports.getWinners = async (req, res) => {
       })
     );
     res.json({
+      owner: room.owner,
       status: room.status,
       winners: enhancedWinners,
     });

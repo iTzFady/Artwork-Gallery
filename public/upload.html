@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A7la sho8l</title>
+    <title>Artwork Gallery - Upload Artwork</title>
     <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://kit.fontawesome.com/0b88e23e1b.js"
@@ -17,33 +17,35 @@
     />
   </head>
   <body>
-    <!-- <div id="profile" class="Personification">
-      <img id="profilePic" />
-      <h2 id="username"></h2>
-    </div> -->
-    <div class="Upload" id="upload-container">
-      <h1>Upload a photo <span id="roomCodeDisplay"></span></h1>
-      <form id="uploadform">
-        <label for="fileInput" class="upload-btn-container">
+    <div class="upload-container" id="upload-container">
+      <div class="upload-header">
+        <h1>Upload a Photo</h1>
+        <div class="room-code" id="roomCodeDisplay">Room: Loading...</div>
+      </div>
+
+      <form id="uploadform" class="upload-form">
+        <div class="upload-btn-container">
           <button id="uploadPhotoBtn" type="button">
-            <i class="fas fa-camera"></i>
-            <span class="btn-text">Upload a Photo</span>
+            <i class="fas fa-cloud-arrow-up"></i>
+            <span class="btn-text">Select or drag a photo</span>
             <img id="preview" alt="Image preview" class="btn-preview" />
           </button>
-        </label>
+        </div>
+
         <input
           type="file"
           id="fileInput"
           accept="image/*"
           style="display: none"
         />
-        <input
-          type="text"
+
+        <textarea
           id="description"
           name="description"
-          placeholder="Write your description"
-          required
-        />
+          class="description-input"
+          placeholder="Describe your artwork... (optional)"
+        ></textarea>
+
         <button id="submitBtn" type="button">Upload Photo</button>
       </form>
     </div>

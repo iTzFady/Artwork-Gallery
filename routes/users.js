@@ -9,7 +9,6 @@ const {
   verifyToken,
 } = require("../controllers/userController");
 const auth = require("../middleware/auth");
-const { error } = require("console");
 const router = express.Router();
 
 const profilePicStorage = multer.diskStorage({
