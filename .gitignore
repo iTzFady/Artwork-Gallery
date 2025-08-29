@@ -139,3 +139,4 @@ dist
 # uploads/*
 # !uploads/.profile-pics
 uploads/
+.vscode/
