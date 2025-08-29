@@ -9,8 +9,6 @@ document.addEventListener("DOMContentLoaded", async function () {
   const isAuthenticated = await checkAuth();
   if (!isAuthenticated) return;
 
-  await updateProfile();
-
   const fileInput = document.getElementById("fileInput");
   const uploadBtn = document.getElementById("uploadPhotoBtn");
   const preview = document.getElementById("preview");
@@ -131,31 +129,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       }
     });
 });
-async function loadProfile() {
-  try {
-    const response = await fetch("/api/users/profile", {
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem("authToken")}`,
-      },
-    });
-    if (!response.ok) throw new Error("Failed to load profile");
-    return await response.json();
-  } catch (error) {
-    console.error("Profile load error:", error);
-    return null;
-  }
-}
-async function updateProfile() {
-  const profile = await loadProfile();
-  if (profile) {
-    // const profilePic = document.getElementById("profilePic");
-    // const username = document.getElementById("username");
-    // profilePic.src =
-    //   profile.profilePicture || "/assets/imgs/default-profile.png";
-    // profilePic.alt = `${profile.name || "User"}`;
-    // username.textContent = `${profile.name || "User"}`;
-  }
-}
+
 async function checkAuth() {
   try {
     const token = localStorage.getItem("authToken");

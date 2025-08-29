@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         podiumPlace.innerHTML = `
           <div class="podium-badge">
-            <img src="/assets/imgs/Medals/${medalImages[index]}" alt="${
+            <img src="/assets/Medals/${medalImages[index]}" alt="${
           placeNames[index]
         } Medal">
             <h2>${placeNames[index]}</h2>

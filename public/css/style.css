@@ -68,7 +68,6 @@ body {
   margin-bottom: 24px;
   position: relative;
 }
-
 .form-group label {
   display: block;
   margin-bottom: 8px;
@@ -76,11 +75,9 @@ body {
   color: var(--text-dark);
   font-size: 14px;
 }
-
 .input-with-icon {
   position: relative;
 }
-
 .input-with-icon i {
   position: absolute;
   left: 16px;
@@ -89,7 +86,6 @@ body {
   color: var(--text-light);
   transition: var(--transition);
 }
-
 .input-with-icon input {
   width: 100%;
   padding: 16px 16px 16px 48px;
@@ -100,13 +96,11 @@ body {
   transition: var(--transition);
   color: var(--text-dark);
 }
-
 .input-with-icon input:focus {
   outline: none;
   border-color: var(--primary-black);
   box-shadow: 0 0 0 3px rgba(10, 10, 10, 0.1);
 }
-
 .input-with-icon input:focus + i {
   color: var(--primary-black);
 }
@@ -117,7 +111,6 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-
 .profile-preview {
   width: 100px;
   height: 100px;
@@ -128,7 +121,6 @@ body {
   margin-bottom: 16px;
   display: none;
 }
-
 .profile-upload-label {
   display: inline-block;
   padding: 12px 24px;
@@ -140,12 +132,10 @@ body {
   transition: var(--transition);
   font-weight: 500;
 }
-
 .profile-upload-label:hover {
   background: #f0f0f0;
   border-color: var(--primary-black);
 }
-
 #profilePicture {
   display: none;
 }
@@ -175,18 +165,16 @@ body {
   color: var(--text-light);
   font-size: 15px;
 }
-
 .form-link a {
   color: var(--primary-black);
   text-decoration: none;
   font-weight: 600;
   transition: var(--transition);
 }
-
 .form-link a:hover {
   color: var(--accent);
 }
-
+/*End of Sign in & Sign Up*/
 /* Home Page */
 .header {
   text-align: center;
@@ -194,14 +182,12 @@ body {
   width: 100%;
   max-width: 600px;
 }
-
 .profile-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
 }
-
 .profile-pic {
   width: 120px;
   height: 120px;
@@ -211,19 +197,16 @@ body {
   box-shadow: var(--shadow);
   margin-bottom: 16px;
 }
-
 .username {
   font-size: 28px;
   font-weight: 600;
   color: var(--primary-black);
   margin-bottom: 8px;
 }
-
 .welcome-text {
   font-size: 18px;
   color: var(--text-light);
 }
-
 .main-container {
   background: var(--primary-white);
   width: 100%;
@@ -233,7 +216,6 @@ body {
   overflow: hidden;
   padding: 30px;
 }
-
 .container-title {
   text-align: center;
   margin-bottom: 24px;
@@ -247,7 +229,6 @@ body {
   position: relative;
   color: var(--text-light);
 }
-
 .divider::before,
 .divider::after {
   content: "";
@@ -257,11 +238,9 @@ body {
   height: 1px;
   background-color: #e0e0e0;
 }
-
 .divider::before {
   left: 0;
 }
-
 .divider::after {
   right: 0;
 }
@@ -277,41 +256,33 @@ body {
   text-align: center;
   display: block;
 }
-
 .btn-primary {
   background: var(--primary-black);
   color: var(--primary-white);
 }
-
 .btn-primary:hover {
   background: #252525;
   transform: translateY(-2px);
 }
-
 .btn-secondary {
   background: var(--secondary-white);
   color: var(--primary-black);
   border: 1px solid #e0e0e0;
 }
-
 .btn-secondary:hover {
   background: #f0f0f0;
   transform: translateY(-2px);
 }
-
 .btn:active {
   transform: translateY(0);
 }
-
 .btn i {
   margin-right: 8px;
 }
-
 .logout-link {
   text-align: center;
   margin-top: 24px;
 }
-
 .logout-link a {
   color: var(--text-light);
   text-decoration: none;
@@ -319,19 +290,10 @@ body {
   transition: var(--transition);
   cursor: pointer;
 }
-
 .logout-link a:hover {
   color: var(--error);
 }
-.submit button {
-  position: absolute;
-  right: 10px;
-  top: 35%;
-  width: 41%;
-  margin: 1%;
-  padding: 1% 0%;
-  margin: 2%;
-}
+/*End of Home Page*/
 /* Artwork Gallery Page*/
 .artworks-nav {
   display: flex;
@@ -348,13 +310,11 @@ body {
   gap: 1rem;
   box-shadow: var(--shadow);
 }
-
 .user-section {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-
 .user-section img {
   width: 40px;
   height: 40px;
@@ -363,13 +323,11 @@ body {
   border: 2px solid var(--primary-white);
   box-shadow: var(--shadow);
 }
-
 .user-section h2 {
   font-size: 1rem;
   color: var(--text-dark);
   font-weight: 500;
 }
-
 .logout-btn {
   background: none;
   border: none;
@@ -378,23 +336,19 @@ body {
   font-size: 1.2rem;
   transition: var(--transition);
 }
-
 .logout-btn:hover {
   color: var(--error);
 }
-
 .room-code-section {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-
 .room-code-section h1 {
   font-size: 1rem;
   color: var(--text-dark);
   white-space: nowrap;
 }
-
 .code-input {
   height: 2.5rem;
   width: 150px;
@@ -407,7 +361,6 @@ body {
   outline: none;
   text-align: center;
 }
-
 .copy-btn {
   background: var(--primary-black);
   color: var(--primary-white);
@@ -418,11 +371,9 @@ body {
   cursor: pointer;
   transition: var(--transition);
 }
-
 .copy-btn:hover {
   background: #252525;
 }
-
 .end-competition-btn {
   background: var(--error);
   color: var(--primary-white);
@@ -434,11 +385,9 @@ body {
   transition: var(--transition);
   display: none;
 }
-
 .end-competition-btn:hover {
   background: #c0392b;
 }
-
 .ended-badge {
   background-color: var(--error);
   color: white;
@@ -448,7 +397,6 @@ body {
   font-weight: bold;
   margin-left: 10px;
 }
-
 /* Main Content */
 .artwork-body {
   flex: 1;
@@ -458,30 +406,25 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 .gallery-container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .gallery-header {
   text-align: center;
   margin-bottom: 2rem;
 }
-
 .gallery-title {
   font-size: 2rem;
   font-weight: 700;
   color: var(--primary-black);
   margin-bottom: 0.5rem;
 }
-
 .gallery-subtitle {
   color: var(--text-light);
   font-size: 1.1rem;
 }
-
 /* Artworks Grid */
 .artworks-grid {
   display: grid;
@@ -489,7 +432,6 @@ body {
   gap: 1.5rem;
   width: 100%;
 }
-
 .upload-card {
   background: var(--primary-white);
   border-radius: var(--border-radius);
@@ -503,29 +445,24 @@ body {
   cursor: pointer;
   border: 2px dashed #e0e0e0;
 }
-
 .upload-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
   border-color: var(--accent);
 }
-
 .upload-content {
   text-align: center;
   padding: 2rem;
 }
-
 .upload-icon {
   font-size: 3rem;
   color: var(--text-light);
   margin-bottom: 1rem;
 }
-
 .upload-text {
   color: var(--text-dark);
   font-weight: 500;
 }
-
 /* Artwork Cards */
 .artwork-card {
   background: var(--primary-white);
@@ -535,19 +472,16 @@ body {
   transition: var(--transition);
   position: relative;
 }
-
 .artwork-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
-
 .artwork-image {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
 }
-
 .artwork-overlay {
   position: absolute;
   top: 0;
@@ -562,17 +496,14 @@ body {
   flex-direction: column-reverse;
   padding: 1.2rem;
 }
-
 .artwork-card:hover .artwork-overlay {
   opacity: 1;
 }
-
 .artwork-author {
   display: flex;
   align-items: center;
   margin-bottom: 0.8rem;
 }
-
 .author-avatar {
   width: 30px;
   height: 30px;
@@ -580,12 +511,10 @@ body {
   margin-right: 10px;
   object-fit: cover;
 }
-
 .author-name {
   font-size: 0.9rem;
   font-weight: 500;
 }
-
 .artwork-description {
   font-size: 0.9rem;
   margin-bottom: 1rem;
@@ -594,7 +523,6 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
 .delete-artwork-btn {
   position: absolute;
   top: 10px;
@@ -612,16 +540,13 @@ body {
   transition: var(--transition);
   opacity: 0;
 }
-
 .artwork-card:hover .delete-artwork-btn {
   opacity: 1;
 }
-
 .delete-artwork-btn:hover {
   background: var(--error);
   color: white;
 }
-
 /* Empty State */
 .empty-state {
   text-align: center;
@@ -632,14 +557,13 @@ body {
   margin-top: 2rem;
   grid-column: 1 / -1;
 }
-
 .empty-state p {
   color: var(--text-light);
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
 }
-/**/
-
+/*End of Artwork Gallery Page*/
+/*Upload Artwork Page*/
 .upload-container {
   background: var(--primary-white);
   width: 100%;
@@ -649,19 +573,16 @@ body {
   overflow: hidden;
   padding: 30px;
 }
-
 .upload-header {
   text-align: center;
   margin-bottom: 30px;
 }
-
 .upload-header h1 {
   font-size: 28px;
   font-weight: 600;
   color: var(--primary-black);
   margin-bottom: 8px;
 }
-
 .room-code {
   font-size: 16px;
   color: var(--text-light);
@@ -671,21 +592,18 @@ body {
   display: inline-block;
   margin-top: 8px;
 }
-
 /* Upload Form */
 .upload-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 /* Upload Button */
 .upload-btn-container {
   position: relative;
   width: 100%;
   margin-bottom: 10px;
 }
-
 #uploadPhotoBtn {
   position: relative;
   width: 100%;
@@ -701,32 +619,27 @@ body {
   transition: var(--transition);
   cursor: pointer;
 }
-
 #uploadPhotoBtn:hover {
   border-color: var(--accent);
   background: #f9f9f9;
 }
-
 #uploadPhotoBtn.dragover {
   border-color: var(--accent);
   background: rgba(136, 0, 255, 0.05);
   transform: scale(0.98);
 }
-
 #uploadPhotoBtn i {
   font-size: 48px;
   color: var(--text-light);
   margin-bottom: 16px;
   transition: var(--transition);
 }
-
 .btn-text {
   font-size: 18px;
   font-weight: 500;
   color: var(--text-light);
   transition: var(--transition);
 }
-
 .btn-preview {
   position: absolute;
   top: 0;
@@ -738,17 +651,14 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-
 .btn-preview.visible {
   opacity: 1;
 }
-
 .btn-preview.visible ~ i,
 .btn-preview.visible ~ .btn-text {
   opacity: 0;
   transform: scale(0.8);
 }
-
 #clear-preview-btn {
   position: absolute;
   top: 12px;
@@ -768,16 +678,13 @@ body {
   opacity: 0;
   transition: var(--transition);
 }
-
 #uploadPhotoBtn:hover #clear-preview-btn,
 #clear-preview-btn.visible {
   opacity: 1;
 }
-
 #clear-preview-btn:hover {
   background: rgba(0, 0, 0, 0.9);
 }
-
 /* Description Input */
 .description-input {
   width: 100%;
@@ -790,17 +697,14 @@ body {
   resize: vertical;
   min-height: 100px;
 }
-
 .description-input:focus {
   outline: none;
   border-color: var(--primary-black);
   box-shadow: 0 0 0 3px rgba(10, 10, 10, 0.1);
 }
-
 .description-input::placeholder {
   color: var(--text-light);
 }
-
 /* Submit Button */
 #submitBtn {
   width: 100%;
@@ -814,23 +718,20 @@ body {
   cursor: pointer;
   transition: var(--transition);
 }
-
 #submitBtn:hover:not(:disabled) {
   background: #252525;
   transform: translateY(-2px);
 }
-
 #submitBtn:active {
   transform: translateY(0);
 }
-
 #submitBtn:disabled {
   background: var(--text-light);
   cursor: not-allowed;
   transform: none;
 }
-
-/**/
+/*End of Upload Artwork page*/
+/* Voting Page */
 .navbar {
   display: flex;
   align-items: center;
@@ -843,13 +744,11 @@ body {
   z-index: 100;
   width: 100%;
 }
-
 .Personification {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-
 .Personification img {
   width: 45px;
   height: 45px;
@@ -858,18 +757,23 @@ body {
   border: 2px solid var(--primary-white);
   box-shadow: var(--shadow);
 }
-
 .Personification h2 {
   font-size: 1.1rem;
   font-weight: 500;
   color: var(--text-dark);
 }
-
 .navbar h1 {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--primary-black);
   text-align: center;
+}
+.voting-container {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 2rem;
+  gap: 2rem;
 }
 /* Artwork Display */
 .photos {
@@ -879,15 +783,20 @@ body {
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
+  padding: 30px 30px 30px 30px;
+  width: 100%;
+  align-items: center;
+  margin: 40px;
 }
-
+.photos img {
+  width: 100%;
+}
 #votedImage {
   width: 100%;
   height: 400px;
   object-fit: cover;
   background-color: var(--secondary-white);
 }
-
 #photoDescription {
   padding: 1.5rem;
   font-size: 1.1rem;
@@ -895,7 +804,6 @@ body {
   border-top: 1px solid #eee;
   margin: 0;
 }
-
 /* Rating Section */
 .Rating {
   background: var(--primary-white);
@@ -910,47 +818,50 @@ body {
   min-width: fit-content;
   width: 100%;
 }
-
+.Rating h1 {
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: system-ui;
+  position: absolute;
+  top: 1%;
+  right: 33%;
+}
 .ratingBox {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-
 .ratingstars {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
   margin-bottom: 1rem;
 }
-
 .ratingstars i {
   font-size: 2.5rem;
   color: #ddd;
   cursor: pointer;
   transition: var(--transition);
 }
-
 .ratingstars i.hover {
   color: #ffdb58;
 }
-
 .ratingstars i.active {
   color: #ffc107;
 }
-
 .rating-value {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--text-dark);
 }
-
 /* Review Form */
 .opinions {
   margin-top: 1rem;
 }
-
 #opinion {
   width: 100%;
   padding: 1rem;
@@ -963,13 +874,11 @@ body {
   transition: var(--transition);
   margin-bottom: 1rem;
 }
-
 #opinion:focus {
   outline: none;
   border-color: var(--primary-black);
   box-shadow: 0 0 0 3px rgba(10, 10, 10, 0.1);
 }
-
 .submit-btn {
   width: 100%;
   padding: 1rem;
@@ -982,28 +891,29 @@ body {
   cursor: pointer;
   transition: var(--transition);
 }
-
+.submit-btn:hover {
+  background-color: #45a049;
+}
 .submit-btn:hover:not(:disabled) {
   background: #252525;
   transform: translateY(-2px);
 }
-
 .submit-btn:active {
   transform: translateY(0);
 }
-
 .submit-btn:disabled {
   background: var(--text-light);
   cursor: not-allowed;
 }
-
 /* Reviews Section */
 .reviews-container {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 2rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  width: 100%;
 }
-
 .reviews-container h2 {
   font-size: 1.8rem;
   font-weight: 600;
@@ -1012,48 +922,43 @@ body {
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #eee;
 }
-
 .reviews-list {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-top: 15px;
 }
-
 .review-item {
   background: var(--primary-white);
   border-radius: var(--border-radius);
   padding: 1.5rem;
   box-shadow: var(--shadow);
+  margin-bottom: 15px;
 }
-
 .review-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.8rem;
 }
-
 .review-user {
   font-weight: 600;
   color: var(--primary-black);
 }
-
 .review-rating {
   color: #ffc107;
   font-size: 1.1rem;
 }
-
 .review-date {
   font-size: 0.9rem;
   color: var(--text-light);
   margin-bottom: 1rem;
 }
-
 .review-text {
   line-height: 1.6;
   color: var(--text-dark);
+  margin-top: 8px;
 }
-
 .no-reviews {
   text-align: center;
   color: var(--text-light);
@@ -1062,237 +967,8 @@ body {
   background: var(--primary-white);
   border-radius: var(--border-radius);
 }
-
-/**/
-.error {
-  color: var(--error);
-  font-size: 14px;
-  margin-top: 6px;
-  display: block;
-  min-height: 20px;
-}
-#upload-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-}
-
-.photos {
-  padding: 30px 30px 30px 30px;
-  background: white;
-  width: 100%;
-  align-items: center;
-  margin: 40px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-}
-.photos img {
-  width: 100%;
-}
-.Rating h1 {
-  font-size: 50px;
-  color: #ffffff;
-  font-weight: 500;
-  margin-bottom: 20px;
-  text-align: center;
-  font-family: system-ui;
-  position: absolute;
-  top: 1%;
-  right: 33%;
-}
-.ratingstars {
-  font-size: 2.5rem;
-  color: #ddd;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-.ratingstars i {
-  margin: 0 5px;
-  transition: all 0.2s ease;
-}
-.ratingstars i.active {
-  color: #ffc107;
-  transform: scale(1.1);
-}
-
-.ratingstars i.hover {
-  color: #ffdb58;
-}
-.opinionz input {
-  width: 100%;
-  padding: 12px 15px;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  font-size: 16px;
-  font-family: Arial, sans-serif;
-  transition: border-color 0.3s;
-}
-
-.opinionz input:focus {
-  outline: none;
-  border-color: #4caf50;
-}
-.submit-btn {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 12px 25px;
-  margin-top: 20px;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.submit-btn:hover {
-  background-color: #45a049;
-}
-#uploadform input {
-  width: unset;
-  border-radius: 0 0 10% 10%;
-}
-
-.rating-value {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  color: #666;
-}
-.container {
-  display: flex;
-  align-items: center;
-  margin: 20px;
-  padding: 2rem;
-  gap: 2rem;
-}
-#submitBtn {
-  padding: 10px 20px;
-  background: #2196f3;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  aspect-ratio: auto;
-}
-#photoDescription {
-  margin-top: 20px;
-  text-align: center;
-  position: relative;
-  top: 50%;
-  font-size: 2rem;
-  font-style: normal;
-  font-family: sans-serif;
-}
-#ratingForm {
-  display: contents;
-}
-.reviews-container {
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 20px;
-  background: #f9f9f9;
-  border-radius: 8px;
-  width: 100%;
-}
-
-.reviews-container h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.reviews-list {
-  margin-top: 15px;
-}
-
-.review-item {
-  padding: 15px;
-  margin-bottom: 15px;
-  background: white;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.review-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 8px;
-}
-
-.review-user {
-  font-weight: bold;
-}
-
-.review-rating {
-  color: #ffc107;
-}
-
-.review-date {
-  color: #777;
-  font-size: 0.9em;
-}
-
-.review-text {
-  margin-top: 8px;
-}
-
-.no-reviews {
-  text-align: center;
-  color: #777;
-  font-style: italic;
-}
-.roomCodeBox {
-  display: flex;
-  align-items: center;
-  position: relative;
-  flex: 1;
-  min-width: unset;
-  max-width: 450px;
-  order: 2;
-  width: 100%;
-}
-.upload-btn-container {
-  position: relative;
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.artwork-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.artwork-wrapper img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.artwork-card:hover img {
-  transform: scale(1.05);
-}
-
-.artwork-info {
-  width: 100%;
-}
-
-#profile {
-  position: absolute;
-  top: 1%;
-  align-self: start;
-  margin-left: 1%;
-}
-.artwork-body {
-  flex: 1;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
+/* End of Voting Page */
+/* Winners Page*/
 .winners-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -1301,12 +977,10 @@ body {
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-
 .winners-header {
   text-align: center;
   margin-bottom: 3rem;
 }
-
 .winners-header h1 {
   font-family: "Oleo Script", cursive;
   font-size: 3rem;
@@ -1316,35 +990,29 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .subtitle {
   font-size: 1.2rem;
   color: #757575;
   font-weight: 300;
 }
-
 .winners-podium {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   gap: 2rem;
   margin-bottom: 3rem;
-  height: 400px; /* Fixed height for consistent sizing */
-  /* position: relative; */
+  height: 400px;
 }
-
 .podium-place {
-  width: 300px; /* Fixed width for all places */
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: all 0.3s ease;
 }
-
 .podium-place:hover {
   transform: translateY(-5px);
 }
-
 .podium-badge {
   display: flex;
   flex-direction: column;
@@ -1352,19 +1020,16 @@ body {
   margin-bottom: 1rem;
   text-align: center;
 }
-
 .podium-badge img {
   height: 60px;
   margin-bottom: 0.5rem;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }
-
 .podium-badge h2 {
   font-size: 1.2rem;
   font-weight: 600;
   color: #212121;
 }
-
 .winner-photo {
   height: 200px;
   width: 100%;
@@ -1375,12 +1040,10 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
-
 .winner-photo:hover {
   transform: scale(1.03);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
-
 .winner-photo img {
   display: block;
   width: 100%;
@@ -1388,7 +1051,6 @@ body {
   object-fit: cover;
   transition: all 0.3s ease;
 }
-
 .winner-info {
   position: absolute;
   bottom: 0;
@@ -1399,74 +1061,60 @@ body {
   color: #ffffff;
   text-align: center;
 }
-
 .winner-info h3 {
   font-size: 1.2rem;
   margin-bottom: 0.3rem;
   font-weight: 600;
 }
-
 .winner-score {
   font-size: 0.9rem;
   opacity: 0.9;
 }
-
 .podium-stand {
   width: 100%;
   background: #f5f5f5;
   border-radius: 8px 8px 0 0;
-  margin-top: auto; /* Push to bottom */
+  margin-top: auto;
 }
-
 .first-place {
   order: 2;
   z-index: 3;
 }
-
 .first-place .winner-photo {
   border: 5px solid #ffd700;
 }
-
 .first-place .podium-stand {
   height: 120px;
   background: linear-gradient(to right, #ffd700, #f9e076);
   box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
 }
-
 .second-place {
   order: 1;
   z-index: 2;
 }
-
 .second-place .winner-photo {
   border: 5px solid #c0c0c0;
 }
-
 .second-place .podium-stand {
   height: 90px;
   background: linear-gradient(to right, #c0c0c0, #e0e0e0);
   box-shadow: 0 5px 15px rgba(192, 192, 192, 0.4);
 }
-
 .third-place {
   order: 3;
   z-index: 1;
 }
-
 .third-place .winner-photo {
   border: 5px solid #cd7f32;
 }
-
 .third-place .podium-stand {
   height: 60px;
   background: linear-gradient(to right, #cd7f32, #e6b873);
   box-shadow: 0 5px 15px rgba(205, 127, 50, 0.4);
 }
-
 .other-winners {
   margin-top: 3rem;
 }
-
 .other-winners h2 {
   text-align: center;
   font-size: 1.8rem;
@@ -1474,7 +1122,6 @@ body {
   margin-bottom: 2rem;
   position: relative;
 }
-
 .other-winners h2::after {
   content: "";
   display: block;
@@ -1484,13 +1131,11 @@ body {
   margin: 0.5rem auto 0;
   border-radius: 3px;
 }
-
 .winner-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
 }
-
 .winner-card {
   background: #ffffff;
   border-radius: 10px;
@@ -1499,19 +1144,16 @@ body {
   transition: all 0.3s ease;
   position: relative;
 }
-
 .winner-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
-
 .winner-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   display: block;
 }
-
 .winner-position {
   position: absolute;
   top: 10px;
@@ -1528,80 +1170,74 @@ body {
   font-size: 1.1rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
-
 .winner-details {
   padding: 1.2rem;
   text-align: center;
 }
-
 .winner-details h3 {
   font-size: 1.1rem;
   margin-bottom: 0.3rem;
   color: #4b0082;
 }
-
 .winner-details p {
   font-size: 0.9rem;
   color: #757575;
 }
+/* End of Winners Page */
 .end.winner {
   color: black;
   font-size: 19px;
+}
+.error {
+  color: var(--error);
+  font-size: 14px;
+  margin-top: 6px;
+  display: block;
+  min-height: 20px;
 }
 /* Responsive */
 @media (max-width: 576px) {
   .form-container {
     border-radius: 16px;
   }
-
   .form-header {
     padding: 24px;
   }
-
   .sign-form {
     padding: 24px;
   }
-
   .form-header h1 {
     font-size: 36px;
   }
   .main-container {
     padding: 20px;
   }
-
   .profile-pic {
     width: 100px;
     height: 100px;
   }
-
   .username {
     font-size: 24px;
   }
-
   .welcome-text {
     font-size: 16px;
   }
   .upload-container {
     padding: 20px;
   }
-
   .upload-header h1 {
     font-size: 24px;
   }
-
   #uploadPhotoBtn {
     height: 200px;
   }
-
   #uploadPhotoBtn i {
     font-size: 36px;
   }
-
   .btn-text {
     font-size: 16px;
   }
 }
-
 @media (max-width: 768px) {
   html {
     font-size: 14px;
@@ -1650,7 +1286,7 @@ body {
     padding: 0.95em 1.5em;
     width: 100%;
   }
-  .container {
+  .voting-container {
     flex-direction: column;
     width: 100%;
   }
@@ -1667,7 +1303,7 @@ body {
     gap: 1rem;
   }
 
-  .container {
+  .voting-container {
     padding: 1rem;
     gap: 1.5rem;
   }
@@ -1680,7 +1316,6 @@ body {
     padding: 0 1rem;
   }
 }
-
 @media (max-width: 480px) {
   .Personification {
     flex-direction: column;
@@ -1697,7 +1332,7 @@ body {
   }
 }
 @media (max-width: 900px) {
-  .container {
+  .voting-container {
     grid-template-columns: 1fr;
   }
 }
@@ -1713,13 +1348,8 @@ body {
     transform: translateY(0);
   }
 }
-
-.form-container {
-  animation: fadeIn 0.5s ease-out;
-}
-.upload-container {
-  animation: fadeIn 0.5s ease-out;
-}
+.form-container,
+.upload-container,
 .main-container {
   animation: fadeIn 0.5s ease-out;
 }
